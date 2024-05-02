@@ -75,7 +75,7 @@ jobs:
            # gatorgrade --report env md GITHUB_STEP_SUMMARY
            gatorgrade --report file json gatorgrade-custom.json
         - name: Commit and push if it's not a pull request
-          if: github.event_name == 'push'
+          if: always()
           run: |
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
