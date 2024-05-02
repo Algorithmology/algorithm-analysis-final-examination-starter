@@ -81,7 +81,7 @@ jobs:
             git checkout -b insight || git checkout insight
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
-            git add exam/gatorgrade-custom.json
+            git add exam/.insight/gatorgrade-custom.json
             git commit -m "Add changes" -a
             git push origin insight
         # Get the current time
@@ -92,13 +92,13 @@ jobs:
           with:
             format: YYYYMMDD-HH-mm-ss
             utcOffset: "-05:00"
-        # # Write the collected GatorGrade data to the designated branch
-        # - name: Write Collected Data to Designated Branch
-        #   uses: GatorEducator/BranchWrite@v1.0.1
-        #   if: always()
-        #   with:
-        #     repo-token: ${{ secrets.GITHUB_TOKEN }}
-        #     branch: insight
-        #     path: insight/insight-report-${{steps.current-time.outputs.formattedTime}}.json
-        #     source: branch-and-path
-        #     source-arg: main/gatorgrade-custom.json
+        # Write the collected GatorGrade data to the designated branch
+        - name: Write Collected Data to Designated Branch
+          uses: GatorEducator/BranchWrite@v1.0.1
+          if: always()
+          with:
+            repo-token: ${{ secrets.GITHUB_TOKEN }}
+            branch: insight
+            path: insight/insight-report-${{steps.current-time.outputs.formattedTime}}.json
+            source: branch-and-path
+            source-arg: main/gatorgrade-custom.json
