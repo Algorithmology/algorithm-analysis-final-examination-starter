@@ -73,10 +73,12 @@ jobs:
            pipx list
            cd exam
            # gatorgrade --report env md GITHUB_STEP_SUMMARY
-           gatorgrade --report file json gatorgrade-custom.json
+           mkdir .insight
+           gatorgrade --report file json .insight/gatorgrade-custom.json
         - name: Commit and push if it's not a pull request
           if: always()
           run: |
+            git checkout -b insight || git checkout insight
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add exam/gatorgrade-custom.json
