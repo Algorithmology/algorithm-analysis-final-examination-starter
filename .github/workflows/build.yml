@@ -82,15 +82,17 @@ jobs:
            cd exam
            # gatorgrade --report env md GITHUB_STEP_SUMMARY
            mkdir .insight
-           gatorgrade --report file json gatorgrade-custom--${{steps.current-time.outputs.formattedTime}}.json
+           gatorgrade --report file json gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
         - name: Commit and push if it's not a pull request
           if: always()
           run: |
+            ls exam/.insight/gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
+            more exam/.insight/gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
             git checkout -b insight || git checkout insight
             # git pull --rebase origin insight
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
-            git add exam/.insight/gatorgrade-custom--${{steps.current-time.outputs.formattedTime}}.json
+            git add exam/.insight/gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
             git commit -m "Add changes" -a
             git push origin insight
         # Get the current time
