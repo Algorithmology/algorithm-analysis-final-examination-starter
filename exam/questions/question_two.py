@@ -72,7 +72,6 @@ def reverse_str(data: str) -> str:
 
 
 def reverse_number(data: int) -> int:
-    """Reverse the content of the provided number."""
     return 0
 
 
@@ -105,7 +104,6 @@ def reverse_number(data: int) -> int:
 
 
 def reverse_count(data: str) -> Dict[str, Dict[str, str]]:
-    """Reverse the content of the provided string and return it in a mapping."""
     return {"": {"count": "", "reversed": ""}}
 
 
