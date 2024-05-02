@@ -5,8 +5,6 @@
 # You must reorganize and/or add the imports so that they adhere
 # to the industry best practices for Python source code.
 
-from typing import Dict
-
 # Introduction: Read This First! {{{
 
 # Keep in mind these considerations as you implement the required functions:
@@ -77,7 +75,7 @@ def sum_stop_int(stop: int) -> int:
 # so that this function is correctly documented by an algorithm engineer using it.
 
 
-def sum_stop_float(stop: float, step: float) -> float:
+def sum_stop_float(stop, step):
     """Sum all of the numbers up to the provided stop value by a given step value."""
     return stop
 
@@ -107,7 +105,7 @@ def sum_stop_float(stop: float, step: float) -> float:
 # so that this function is correctly documented by an algorithm engineer using it.
 
 
-def sum_function_call_counts(function_call_data: Dict[str, int]) -> int:
+def sum_function_call_counts(function_call_data):
     """Sum all of the counts of function calls in the provided dictionary."""
     return 0
 
