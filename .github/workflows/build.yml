@@ -93,12 +93,12 @@ jobs:
             format: YYYYMMDD-HH-mm-ss
             utcOffset: "-05:00"
         # Write the collected GatorGrade data to the designated branch
-        - name: Write Collected Data to Designated Branch
-          uses: GatorEducator/BranchWrite@v1.0.1
-          if: always()
-          with:
-            repo-token: ${{ secrets.GITHUB_TOKEN }}
-            branch: insight
-            path: insight/insight-report-${{steps.current-time.outputs.formattedTime}}.json
-            source: branch-and-path
-            source-arg: main/gatorgrade-custom.json
+        # - name: Write Collected Data to Designated Branch
+        #   uses: GatorEducator/BranchWrite@v1.0.1
+        #   if: always()
+        #   with:
+        #     repo-token: ${{ secrets.GITHUB_TOKEN }}
+        #     branch: insight
+        #     path: insight/insight-report-${{steps.current-time.outputs.formattedTime}}.json
+        #     source: branch-and-path
+        #     source-arg: main/gatorgrade-custom.json
