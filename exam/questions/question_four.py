@@ -45,8 +45,7 @@
 # so that this function is correctly documented by an algorithm engineer using it.
 
 
-def detect_duplicates_int(data: List[int]) -> bool:
-    """Detect whether or not there are duplicate values in a list of integer values."""
+def detect_duplicates_int(data) -> bool:
     return False
 
 
@@ -76,8 +75,7 @@ def detect_duplicates_int(data: List[int]) -> bool:
 # so that this function is correctly documented by an algorithm engineer using it.
 
 
-def detect_duplicates_str(data: List[str]) -> bool:
-    """Detect whether or not there are duplicate values in a list of string values."""
+def detect_duplicates_str(data) -> bool:
     return True
 
 
@@ -142,7 +140,6 @@ def compare_gene_prefix(gene: Gene, other_gene: Gene) -> bool:
 
 
 def detect_duplicates_gene(data):
-    """Detect whether or not there are duplicate values in a list of Gene values."""
     return True
 
 
