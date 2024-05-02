@@ -75,16 +75,6 @@ jobs:
            # gatorgrade --report env md GITHUB_STEP_SUMMARY
            mkdir .insight
            gatorgrade --report file json .insight/gatorgrade-custom.json
-        - name: Commit and push if it's not a pull request
-          if: always()
-          run: |
-            git checkout -b insight || git checkout insight
-            git pull --rebase origin insight
-            git config --local user.email "action@github.com"
-            git config --local user.name "GitHub Action"
-            git add exam/.insight/gatorgrade-custom.json
-            git commit -m "Add changes" -a
-            git push origin insight
         # Get the current time
         - name: Get the Current Time
           uses: josStorer/get-current-time@v2
@@ -93,6 +83,24 @@ jobs:
           with:
             format: YYYYMMDD-HH-mm-ss
             utcOffset: "-05:00"
+        - name: Commit and push if it's not a pull request
+          if: always()
+          run: |
+            git checkout -b insight || git checkout insight
+            git pull --rebase origin insight
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add exam/.insight/gatorgrade-custom--${{steps.current-time.outputs.formattedTime}}.json
+            git commit -m "Add changes" -a
+            git push origin insight
+        # Get the current time
+        # - name: Get the Current Time
+        #   uses: josStorer/get-current-time@v2
+        #   if: always()
+        #   id: current-time
+        #   with:
+        #     format: YYYYMMDD-HH-mm-ss
+        #     utcOffset: "-05:00"
         # Write the collected GatorGrade data to the designated branch
         # - name: Write Collected Data to Designated Branch
         #   uses: GatorEducator/BranchWrite@v1.0.1
