@@ -88,7 +88,7 @@ jobs:
           run: |
             ls exam/.insight/gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
             more exam/.insight/gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
-            git checkout -b insight || git checkout insight
+            # git checkout -b insight || git checkout insight
             # git pull --rebase origin insight
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
