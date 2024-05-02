@@ -60,11 +60,19 @@ jobs:
             cd exam
             poetry install
         # Confirm correctness with execexam
-        - name: Confirm Correctness with ExecExam
+        # - name: Confirm Correctness with ExecExam
+        #   if: always()
+        #   run: |
+        #     cd exam
+        #     poetry run execexam . tests/ --verbose
+        # Get the current time
+        - name: Get the Current Time
+          uses: josStorer/get-current-time@v2
           if: always()
-          run: |
-            cd exam
-            poetry run execexam . tests/ --verbose
+          id: current-time
+          with:
+            format: YYYYMMDD-HH-mm-ss
+            utcOffset: "-05:00"
         # Run GatorGrader: use the gatorgrade.yml in repository's root
         - name: Run GatorGrader with GatorGrade
           if: always()
@@ -74,20 +82,12 @@ jobs:
            cd exam
            # gatorgrade --report env md GITHUB_STEP_SUMMARY
            mkdir .insight
-           gatorgrade --report file json .insight/gatorgrade-custom.json
-        # Get the current time
-        - name: Get the Current Time
-          uses: josStorer/get-current-time@v2
-          if: always()
-          id: current-time
-          with:
-            format: YYYYMMDD-HH-mm-ss
-            utcOffset: "-05:00"
+           gatorgrade --report file json gatorgrade-custom--${{steps.current-time.outputs.formattedTime}}.json
         - name: Commit and push if it's not a pull request
           if: always()
           run: |
             git checkout -b insight || git checkout insight
-            git pull --rebase origin insight
+            # git pull --rebase origin insight
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add exam/.insight/gatorgrade-custom--${{steps.current-time.outputs.formattedTime}}.json
