@@ -80,9 +80,10 @@ jobs:
            pipx install gatorgrade
            pipx list
            cd exam
+           gatorgrade
            # gatorgrade --report env md GITHUB_STEP_SUMMARY
-           mkdir .insight
-           gatorgrade --report file json .insight/gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
+           # mkdir .insight
+           # gatorgrade --report file json .insight/gatorgrade-custom-${{steps.current-time.outputs.formattedTime}}.json
         # - name: Commit and push if it's not a pull request
         #   if: always()
         #   run: |
