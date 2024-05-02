@@ -30,7 +30,7 @@ from typing import Any, List
 
 # Function specification:
 # The function sort_data_int should:
-# - Take a list of strings, called data, as its parameter
+# - Take a list of ints, called data, as its parameter
 # - Return a new list of integers that is sorted in ascending order
 # - The original input list should not be modified
 
