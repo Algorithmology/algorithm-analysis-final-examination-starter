@@ -13,7 +13,7 @@
   * [Table of Contents](#table-of-contents)
   * [✨ Quick Task List](#-quick-task-list)
   * [🧗 Introduction](#-introduction)
-  * [😁 Note: Student Name](#-note-student-name)
+  * [😁 TODO: Student Name](#-note-student-name)
   * [🚧 Honor Code](#-honor-code)
   * [🌟 Re-type the sentence "I adhered to the Allegheny College Honor Code while completing this examination."](#-re-type-the-sentence-i-adhered-to-the-allegheny-college-honor-code-while-completing-this-examination)
   * [🌐 Examination Overview](#-examination-overview)
@@ -24,16 +24,19 @@
 
 ## ✨ Quick Task List
 
-- [X] Read the `Introduction` section for a brief overview
-- [X] Read the `Honor Code` section and then digitally sign your pledge
-- [X] Keep a running list of your sources in the `Honor Code` section
-- [X] Read all of the content in this `README.md` file for more details
-- [X] Complete the requested programming tasks in the files in the `exam/questions/` directory
-- [X] Type `gatorgrade` in the `exam/` directory to assess the quality of your solution
-- [X] Review the source code files in the `exam/tests/` to see all of the checks
-- [X] Review the `exam/gatorgrade.yml` to see all check commands used to assess your work
-- [X] Frequently use Git to `commit` and `push` your work to the repository
-- [X] Adhere to all of the restrictions and regulations stated in this document
+TODO: You must indicate that you completed each of these tasks by
+placing a capitalized letter `X` in the `[ ]` symbols for each point.
+
+- [ ] Read the `Introduction` section for a brief overview
+- [ ] Read the `Honor Code` section and then digitally sign your pledge
+- [ ] Keep a running list of your sources in the `Honor Code` section
+- [ ] Read all of the content in this `README.md` file for more details
+- [ ] Complete the requested programming tasks in the files in the `exam/questions/` directory
+- [ ] Type `gatorgrade` in the `exam/` directory to assess the quality of your solution
+- [ ] Review the source code files in the `exam/tests/` to see all of the checks
+- [ ] Review the `exam/gatorgrade.yml` to see all check commands used to assess your work
+- [ ] Frequently use Git to `commit` and `push` your work to the repository
+- [ ] Adhere to all of the restrictions and regulations stated in this document
 
 ## 🧗 Introduction
 
@@ -45,9 +48,9 @@ please see the course instructor during the assessment time period. You must
 read and ensure that you understand all of the instructions in this file before
 starting the assessment.
 
-## 😁 Note: Student Name
+## 😁 TODO: Student Name
 
-Note: You must delete `Student Name` and add your name to the subsection header
+TODO: You must delete `Student Name` and add your name to the subsection header
 
 ## 🚧 Honor Code
 
@@ -72,7 +75,7 @@ this assessment.
 
 ## 🌟 Re-type the sentence "I adhered to the Allegheny College Honor Code while completing this examination."
 
-Note: You must retype the sentence here in order to digitally sign your pledge.
+TODO: You must retype the sentence here in order to digitally sign your pledge.
 
 "I adhered to the Allegheny College Honor Code while completing this examination."
 
@@ -80,7 +83,7 @@ Note: You must retype the sentence here in order to digitally sign your pledge.
 instructor will not know that you adhered to the Allegheny College Honor Code
 while completing the assessment.
 
-Note: Please list here the sources that you consulted while completing the examination!
+TODO: Please list here the sources that you consulted while completing the examination!
 
 ## 🌐 Examination Overview
 
