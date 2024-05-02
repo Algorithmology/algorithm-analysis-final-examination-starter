@@ -79,7 +79,7 @@ jobs:
           if: always()
           run: |
             git checkout -b insight || git checkout insight
-            git pull
+            git pull --rebase origin insight
             git config --local user.email "action@github.com"
             git config --local user.name "GitHub Action"
             git add exam/.insight/gatorgrade-custom.json
