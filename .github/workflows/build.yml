@@ -74,6 +74,14 @@ jobs:
            cd exam
            # gatorgrade --report env md GITHUB_STEP_SUMMARY
            gatorgrade --report file json gatorgrade-custom.json
+        - name: Commit and push if it's not a pull request
+          if: github.event_name == 'push'
+          run: |
+            git config --local user.email "action@github.com"
+            git config --local user.name "GitHub Action"
+            git add gatorgrade-custom.json
+            git commit -m "Add changes" -a
+            git push
         # Get the current time
         - name: Get the Current Time
           uses: josStorer/get-current-time@v2
