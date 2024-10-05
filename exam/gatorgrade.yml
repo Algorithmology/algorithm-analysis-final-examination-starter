@@ -4,6 +4,9 @@ setup: |
   poetry install
 ---
 
+# Upgraded to use the newest version of:
+# gatorgrade and execexam
+
 # Honor Code {{{
 
 - ../README.md:
