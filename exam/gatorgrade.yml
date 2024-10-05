@@ -266,7 +266,7 @@ setup: |
 # Question 1
 
 - description: Run checks for Question 1 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_one_part_a"
+  command: poetry run execexam . tests/  --mark "question_one_part_a"
   objectives:
     LO1:
       degree:
@@ -278,7 +278,7 @@ setup: |
           rationale: "Search a matrix and compute summary values based on matrix"
 
 - description: Run checks for Question 1 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_one_part_b"
+  command: poetry run execexam . tests/  --mark "question_one_part_b"
   objectives:
     LO1:
       degree:
@@ -290,7 +290,7 @@ setup: |
           rationale: "Search a matrix and compute summary values based on matrix"
 
 - description: Run checks for Question 1 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_one_part_c"
+  command: poetry run execexam . tests/  --mark "question_one_part_c"
   objectives:
     LO1:
       degree:
@@ -304,7 +304,7 @@ setup: |
 # Question 2
 
 - description: Run checks for Question 2 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_two_part_a"
+  command: poetry run execexam . tests/  --mark "question_two_part_a"
   objectives:
     LO1:
       degree:
@@ -312,7 +312,7 @@ setup: |
           rationale: "Reverse a string"
 
 - description: Run checks for Question 2 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_two_part_b"
+  command: poetry run execexam . tests/  --mark "question_two_part_b"
   objectives:
     LO1:
       degree:
@@ -320,7 +320,7 @@ setup: |
           rationale: "Reverse a string-based encoding of an integer"
 
 - description: Run checks for Question 2 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_two_part_c"
+  command: poetry run execexam . tests/  --mark "question_two_part_c"
   objectives:
     LO1:
       degree:
@@ -330,7 +330,7 @@ setup: |
 # Question 3
 
 - description: Run checks for Question 3 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_three_part_a"
+  command: poetry run execexam . tests/  --mark "question_three_part_a"
   objectives:
     LO5:
       degree:
@@ -338,7 +338,7 @@ setup: |
           rationale: "Perform a summation on a list of integers"
 
 - description: Run checks for Question 3 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_three_part_b"
+  command: poetry run execexam . tests/  --mark "question_three_part_b"
   objectives:
     LO5:
       degree:
@@ -346,7 +346,7 @@ setup: |
           rationale: "Perform a summation on a list of floating-point values"
 
 - description: Run checks for Question 3 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_three_part_c"
+  command: poetry run execexam . tests/  --mark "question_three_part_c"
   objectives:
     LO5:
       degree:
@@ -356,7 +356,7 @@ setup: |
 # Question 4
 
 - description: Run checks for Question 4 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_four_part_a"
+  command: poetry run execexam . tests/  --mark "question_four_part_a"
   objectives:
     LO1:
       degree:
@@ -368,7 +368,7 @@ setup: |
           rationale: "Detect duplicate values in a list of integers"
 
 - description: Run checks for Question 4 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_four_part_b"
+  command: poetry run execexam . tests/  --mark "question_four_part_b"
   objectives:
     LO1:
       degree:
@@ -380,7 +380,7 @@ setup: |
           rationale: "Detect duplicate values in a list of strings"
 
 - description: Run checks for Question 4 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_four_part_c"
+  command: poetry run execexam . tests/  --mark "question_four_part_c"
   objectives:
     LO1:
       degree:
@@ -394,7 +394,7 @@ setup: |
 # Question 5
 
 - description: Run checks for Question 5 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_five_part_a"
+  command: poetry run execexam . tests/  --mark "question_five_part_a"
   objectives:
     LO1:
       degree:
@@ -402,7 +402,7 @@ setup: |
           rationale: "Implement a stack data structure using a list"
 
 - description: Run checks for Question 5 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_five_part_b"
+  command: poetry run execexam . tests/  --mark "question_five_part_b"
   objectives:
     LO1:
       degree:
@@ -410,7 +410,7 @@ setup: |
           rationale: "Use the double-ended queue to process documents in a list"
 
 - description: Run checks for Question 5 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_five_part_c"
+  command: poetry run execexam . tests/  --mark "question_five_part_c"
   objectives:
     LO1:
       degree:
@@ -420,7 +420,7 @@ setup: |
 # Question 6
 
 - description: Run checks for Question 6 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_six_part_a"
+  command: poetry run execexam . tests/  --mark "question_six_part_a"
   objectives:
     LO1:
       degree:
@@ -432,7 +432,7 @@ setup: |
           rationale: "Sort a list of integer values"
 
 - description: Run checks for Question 6 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_six_part_b"
+  command: poetry run execexam . tests/  --mark "question_six_part_b"
   objectives:
     LO1:
       degree:
@@ -444,7 +444,7 @@ setup: |
           rationale: "Sort a list of string values"
 
 - description: Run checks for Question 6 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_six_part_c"
+  command: poetry run execexam . tests/  --mark "question_six_part_c"
   objectives:
     LO1:
       degree:
@@ -458,7 +458,7 @@ setup: |
 # Question 7
 
 - description: Run checks for Question 7 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_seven_part_a"
+  command: poetry run execexam . tests/  --mark "question_seven_part_a"
   objectives:
     LO1:
       degree:
@@ -470,7 +470,7 @@ setup: |
           rationale: "Implement a depth-first traversal of a tree"
 
 - description: Run checks for Question 7 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_seven_part_b"
+  command: poetry run execexam . tests/  --mark "question_seven_part_b"
   objectives:
     LO1:
       degree:
@@ -482,7 +482,7 @@ setup: |
           rationale: "Implement a breadth-first traversal of a tree"
 
 - description: Run checks for Question 7 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_seven_part_c"
+  command: poetry run execexam . tests/  --mark "question_seven_part_c"
   objectives:
     LO1:
       degree:
@@ -496,7 +496,7 @@ setup: |
 # Question 8
 
 - description: Run checks for Question 8 Part (a) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_eight_part_a"
+  command: poetry run execexam . tests/  --mark "question_eight_part_a"
   objectives:
     LO5:
       degree:
@@ -504,7 +504,7 @@ setup: |
           rationale: "Implement a recursive binary search with list slicing"
 
 - description: Run checks for Question 8 Part (b) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_eight_part_b"
+  command: poetry run execexam . tests/  --mark "question_eight_part_b"
   objectives:
     LO5:
       degree:
@@ -512,7 +512,7 @@ setup: |
           rationale: "Implement a recursive binary search without list slicing"
 
 - description: Run checks for Question 8 Part (c) with 'execexam' command and confirm correct exit code
-  command: poetry run execexam . tests/ --verbose --mark "question_eight_part_c"
+  command: poetry run execexam . tests/  --mark "question_eight_part_c"
   objectives:
     LO5:
       degree:
