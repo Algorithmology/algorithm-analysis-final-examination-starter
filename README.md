@@ -27,6 +27,9 @@
 TODO: You must indicate that you completed each of these tasks by
 placing a capitalized letter `X` in the `[ ]` symbols for each point.
 
+TODO: Please place the capitalized letter `X` only after you
+have completed the designated task.
+
 - [ ] Read the `Introduction` section for a brief overview
 - [ ] Read the `Honor Code` section and then digitally sign your pledge
 - [ ] Keep a running list of your sources in the `Honor Code` section
